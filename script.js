@@ -1,3 +1,4 @@
+my site
 // First Button 
   var counter1 = 10; // Add time here in seconds 
   var id1, firstbutton = document.getElementById("first-timer show"), element1 = document.createElement("p");
