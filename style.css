@@ -1,0 +1,256 @@
+.show_button {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .cu_generate_button {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    transition: background 0.3s, color 0.3s;
+    background-image: linear-gradient(to right, #10efff 0%, #ff0606 51%, #000000 100%);
+    animation: cu_generate_button_glowEffect 1.5s infinite alternate, cu_generate_button_hoverEffect 2s infinite alternate;
+    align-items: center;
+  }
+
+  @keyframes cu_generate_button_glowEffect {
+    0% {
+        box-shadow: 0 0 50px #ff06b4; /* Increased size of the shadow */
+    }
+    100% {
+        box-shadow: 0 0 20px #9811b9; /* Increased size of the shadow */
+    }
+}
+    
+    @keyframes cu_generate_button_hoverEffect {
+    0%, 100% {
+        background-position: left center;
+    }
+    50% {
+        background-position: right center;
+    }
+}
+
+  .cu_get_downlaod_link_button{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #ff105f 0%, #ffad06 51%, #000000 100%);
+    animation: get_downlaod_link_button_glowEffect 1.5s infinite alternate, get_downlaod_link_button_hoverEffect 2s infinite alternate;
+}
+    
+    @keyframes get_downlaod_link_button_glowEffect {
+    0% {
+        box-shadow: 0 0 50px #ffad06; /* Increased size of the shadow */
+    }
+    100% {
+        box-shadow: 0 0 20px #000000; /* Increased size of the shadow */
+    }
+}
+    
+    @keyframes get_downlaod_link_button_hoverEffect {
+    0%, 100% {
+        background-position: left center;
+    }
+    50% {
+        background-position: right center;
+    }
+}
+    
+    
+    
+    
+    .cu_nav {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightcoral; /* Initial background color */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white; /* Text color */
+    animation: cu_navHoverEffect 2s infinite alternate; /* Apply the animation */
+}
+      
+      /* Pause the animation on hover */
+.cu_nav:hover {
+    animation-play-state: running;
+}
+      
+      /* Animation keyframes */
+@keyframes cu_navHoverEffect {
+    0% {
+        background-color: lightcoral; /* Initial background color */
+    }
+    100% {
+        background-color: grey; /* Alternate background color */
+    }
+}
+
+.cu_page-heading {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    margin-bottom: 5px;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #000000 0%, #0f9b0f 51%, #000000 100%);
+    animation: pageglowEffect 1.5s infinite alternate, hoverEffect 2s infinite alternate;
+}
+
+.cu_page-heading:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    animation: hoverEffect 2s infinite;
+    animation-play-state: running; /* Pause the animation on hover */
+}
+
+.cu_main-heading{
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    text-align: center;
+    animation: mainglowEffect 1.5s infinite alternate;
+}
+
+.cu_main-heading:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.cu_sub-heading {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    background-color: #ffad06;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    animation: glowEffect 1.5s infinite alternate;
+}
+
+.cu_sub-heading:hover {
+    background-color: tomato;
+    color: #fff;
+    animation: none; /* Disable the animation on hover */
+    text-shadow: 0 0 10px tomato; /* Adjusted text shadow on hover */
+}
+
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 15px aqua; /* Increased size of the shadow */
+        text-shadow: 0 0 20px aqua; /* Initial text shadow */
+    }
+    100% {
+        box-shadow: 0 0 20px white; /* Increased size of the shadow */
+        text-shadow: 0 0 20px black; /* Initial text shadow */
+    }
+}
+
+@keyframes mainglowEffect {
+    0% {
+        box-shadow: 0 0 15px aqua; /* Increased size of the shadow */
+    }
+    100% {
+        box-shadow: 0 0 20px black; /* Increased size of the shadow */
+    }
+}
+      
+      @keyframes pageglowEffect {
+    0% {
+        box-shadow: 0 0 50px green; /* Increased size of the shadow */
+    }
+    100% {
+        box-shadow: 0 0 20px black; /* Increased size of the shadow */
+    }
+}
+      @keyframes hoverEffect {
+    0% {
+        background-position: left center;
+    }
+    100% {
+        background-position: right center;
+    }
+}
+
+.cu_sub-nav {
+    display: none;
+    padding-left: 20px;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes hoverEffect {
+    0%, 100% {
+        background-position: left center;
+    }
+    50% {
+        background-position: right center;
+    }
+}
+  
+
+  
+    
+  Cnt-Timer {
+    font-family: var(--fontB);
+    font-size: 10px; /* Adjust the font size as needed */
+    opacity: .8;
+    display: inline-flex;
+    align-items: center;
+  }
+  center {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    background: linear-gradient(to right,#6410ffde,#40ff06f8);
+    align-items: center;
+  }
